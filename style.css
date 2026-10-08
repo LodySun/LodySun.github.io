@@ -140,8 +140,7 @@ p { margin: 0 0 1rem; }
 }
 .pub summary span {
   text-decoration: underline; text-decoration-thickness: 1px;
-  text-underline-offset: .22em; text-decoration-color: var(--lav);
-  transition: text-decoration-color .15s ease;
+  text-underline-offset: .22em;
 }
 .pub summary::-webkit-details-marker { display: none; }
 .pub summary::before {
@@ -149,7 +148,6 @@ p { margin: 0 0 1rem; }
 }
 .pub details[open] summary::before { transform: rotate(90deg); }
 .pub summary:hover { color: var(--ink); }
-.pub summary:hover span { text-decoration-color: var(--ink); }
 .pub .abstract {
   margin: .55rem 0 0; font-size: .9rem; color: var(--ink-soft);
   border-left: 2px solid var(--line); padding-left: .85rem;
