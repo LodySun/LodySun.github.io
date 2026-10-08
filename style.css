@@ -131,6 +131,28 @@ p { margin: 0 0 1rem; }
   background: #eef3ec; color: #5f7a59; margin-left: .35rem; white-space: nowrap;
 }
 
+/* ---------- abstract disclosure ---------- */
+.pub details { margin-top: .45rem; }
+.pub summary {
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-size: .85rem; color: var(--ink-faint);
+  cursor: pointer; list-style: none; width: fit-content;
+}
+.pub summary::-webkit-details-marker { display: none; }
+.pub summary::before {
+  content: "\203A"; font-size: 1rem; line-height: 1; transition: transform .15s ease;
+}
+.pub details[open] summary::before { transform: rotate(90deg); }
+.pub summary:hover { color: var(--accent); }
+.pub .abstract {
+  margin: .55rem 0 0; font-size: .9rem; color: var(--ink-soft);
+  border-left: 2px solid var(--line); padding-left: .85rem;
+}
+.pub .abstract p { margin: 0 0 .7rem; }
+.pub .abstract p:last-child { margin-bottom: 0; }
+.pub .abstract .caveat { font-size: .85rem; color: var(--ink-faint); }
+@media print { .pub details > *:not(summary) { display: block; } }
+
 /* ---------- buttons ---------- */
 .btn {
   display: inline-flex; align-items: center; gap: .5rem;
