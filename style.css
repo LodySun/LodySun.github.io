@@ -135,15 +135,21 @@ p { margin: 0 0 1rem; }
 .pub details { margin-top: .45rem; }
 .pub summary {
   display: inline-flex; align-items: center; gap: .3rem;
-  font-size: .85rem; color: var(--ink-faint);
+  font-size: .85rem; color: var(--accent);
   cursor: pointer; list-style: none; width: fit-content;
+}
+.pub summary span {
+  text-decoration: underline; text-decoration-thickness: 1px;
+  text-underline-offset: .22em; text-decoration-color: var(--lav);
+  transition: text-decoration-color .15s ease;
 }
 .pub summary::-webkit-details-marker { display: none; }
 .pub summary::before {
   content: "\203A"; font-size: 1rem; line-height: 1; transition: transform .15s ease;
 }
 .pub details[open] summary::before { transform: rotate(90deg); }
-.pub summary:hover { color: var(--accent); }
+.pub summary:hover { color: var(--ink); }
+.pub summary:hover span { text-decoration-color: var(--ink); }
 .pub .abstract {
   margin: .55rem 0 0; font-size: .9rem; color: var(--ink-soft);
   border-left: 2px solid var(--line); padding-left: .85rem;
