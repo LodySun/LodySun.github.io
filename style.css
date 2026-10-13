@@ -154,7 +154,6 @@ p { margin: 0 0 1rem; }
 }
 .pub .abstract p { margin: 0 0 .7rem; }
 .pub .abstract p:last-child { margin-bottom: 0; }
-.pub .abstract .caveat { font-size: .85rem; color: var(--ink-faint); }
 @media print { .pub details > *:not(summary) { display: block; } }
 
 /* ---------- buttons ---------- */
