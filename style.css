@@ -187,3 +187,23 @@ footer {
   .nav-inner { flex-direction: column; align-items: flex-start; gap: .6rem; }
   .page { padding: 2.6rem 0; }
 }
+
+/* ---------- research disclosures ---------- */
+.achievements { padding-top: 0; }
+.research-disclosure > summary {
+  display: flex; align-items: baseline; gap: .7rem;
+  cursor: pointer; list-style: none; padding: .35rem 0;
+}
+.research-disclosure > summary::-webkit-details-marker { display: none; }
+.research-disclosure > summary::before {
+  content: "›"; flex: 0 0 auto; color: var(--accent); font-size: 1.2rem;
+  transition: transform .15s ease;
+}
+.research-disclosure[open] > summary::before { transform: rotate(90deg); }
+.research-disclosure > summary:hover h3 { color: var(--accent); }
+.research-disclosure > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.achievement-heading { min-width: 0; }
+.achievement-heading .meta { display: block; }
+.research-disclosure .disclosure-body { padding: .5rem 0 .25rem; }
+.research-disclosure .disclosure-body p + p { margin-top: 1rem; }
+.research-disclosure .achievement-links { font-size: .85rem; }

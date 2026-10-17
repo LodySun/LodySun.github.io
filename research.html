@@ -27,13 +27,49 @@
 </nav>
 
 <main>
-  <section class="page">
+  <section class="page" id="future-directions" aria-labelledby="future-directions-title">
     <span class="eyebrow">Research</span>
-    <h2>What I work on</h2>
-
-    <div class="entry">
+    <h2 id="future-directions-title">Future directions</h2>
+    <p class="muted">My recent work suggests that some narrative relations may be more readily detectable in neural patterns during recall than during viewing. The directions below grow out of that observation.</p>
+    <details class="entry research-disclosure">
+      <summary><h3>1. How narrative relations are reconstructed in memory</h3></summary>
+      <div class="disclosure-body">
+        <p>Stories often plant a detail early that acquires its meaning much later. In my pilot analysis of a public naturalistic fMRI dataset (Chen et al., 2017), I found no reliable evidence of plant–payoff pattern similarity during viewing using the current analysis. During payoff recall, however, patterns in posterior medial cortex showed selective similarity to the corresponding earlier plant scene, consistent with reinstatement of its context.</p>
+        <p>I want to build on this in five ways. First, replication and generalisation across narratives and recall tasks, particularly in <em>The Sixth Sense</em> dataset (Zadbood et al., 2022), where a final twist changes the interpretation of earlier scenes. Groups with different access to the twist during viewing and recall provide a useful comparison, although the scene-cued recall task differs from the free recall used in the pilot.</p>
+        <p>Second, the timing of meaning: comparing relations whose significance is available when an event first occurs with those that become interpretable only after later information, and asking how this changes their representation during viewing and recall.</p>
+        <p>Third, the form a relation takes during viewing: studies of hippocampal representations show that overlapping memories can become more distinct with learning (Favila et al., 2016; Chanales et al., 2017), motivating a search for differentiation as well as similarity. Interregional coupling offers another possible measure.</p>
+        <p>Fourth, timing: EEG and MEG could help establish when context reinstatement occurs relative to the onset of verbal report.</p>
+        <p>Fifth, extending this approach to other narrative devices, including suspense–resolution, repetition with variation, conflict, and privileged access to information. These offer ways to ask how anticipation, recurring structure, and competing goals shape event representations and later remembering. I am particularly interested in “inside information”: situations in which the audience knows something a character does not, or has access to one character’s knowledge that others lack. Such asymmetries could connect narrative memory with theory of mind, allowing us to test how viewers track who knows what and whether those distinctions are preserved or reconstructed during recall.</p>
+      </div>
+    </details>
+    <details class="entry research-disclosure">
+      <summary><h3>2. Individual styles of remembering a story</h3></summary>
+      <div class="disclosure-body">
+        <p>People who watch the same film retell it differently. Some emphasise causal order, others emotional turning points, perceptual details, or broader themes. Word-timestamped recall transcripts from existing datasets offer a starting point for characterising this variation, by aligning recollections with the story’s event structure and using language-model measures to describe their semantic trajectories.</p>
+        <p>With repeated observations of the same people recalling different stories, I want to ask whether these tendencies are stable across narratives. I also want to test whether they relate to the strength of earlier-context reinstatement: for example, whether people who explicitly connect events causally when retelling show stronger reinstatement of the scenes those events depend on.</p>
+      </div>
+    </details>
+    <details class="entry research-disclosure">
+      <summary><h3>3. Returning to a context and relating two events</h3></summary>
+      <div class="disclosure-body">
+        <p>Non-linear narratives separate the order in which events are shown from the order in which they must be understood. A flashback may return the viewer to an established context, while another transition introduces a different timeline. In my pilot dataset, scene-specific reinstatement from viewing to recall was robust, even though the cross-event similarity analysis did not detect plant–payoff relations during viewing.</p>
+        <p>This motivates a further question: during viewing, do returns to a familiar narrative context reinstate earlier representations, while shifts to a new timeline promote more distinct event representations? Pattern completion and separation provide a theoretical framework for developing these predictions (Yassa &amp; Stark, 2011), but distinguishing those mechanisms would require more than observing changes in similarity. Behavioral timeline reconstruction could help establish how viewers understand the temporal structure and relate it to the neural measures.</p>
+      </div>
+    </details>
+    <details class="entry research-disclosure">
+      <summary><h3>4. Longer horizon: meaning-making in mood disorders</h3></summary>
+      <div class="disclosure-body">
+        <p>A longer-term question is whether related processes contribute to difficulties in interpreting experience. Depression has been associated with more negative or less positive interpretations of ambiguous situations. It has also been associated with reduced specificity in autobiographical recall (Williams et al., 2007). These are distinct phenomena, and I am interested in how they interact: when a negative interpretation emerges, whether it changes how an event is later remembered, and how people organise accounts of their own past and imagined future.</p>
+        <p>Further ahead, I would like to investigate whether semantic features of psychotherapy dialogue track changes in interpretation and memory, and whether those changes relate to changes in brain function.</p>
+      </div>
+    </details>
+  </section>
+  <section class="page achievements" aria-labelledby="achievements-title">
+    <h2 id="achievements-title">Achievements</h2>
+    <details class="entry research-disclosure">
+      <summary><span class="achievement-heading"><span class="meta">Poster · GitHub repo</span><h3>Reinstatement of narrative context during recall</h3></span></summary>
+      <div class="disclosure-body">
       <div class="meta">Independent project, presented at Brain &amp; Mind Symposium 2026</div>
-      <h3>Reinstatement of narrative context during recall</h3>
       <p>
         Asking whether the brain preserves long-range narrative relationships —
         plant–payoff pairs, where an inconspicuous early detail becomes meaningful
@@ -43,11 +79,13 @@
         structure was not detectable during viewing, but recalling a payoff
         selectively reinstated its own plant’s context in posterior medial cortex.
       </p>
-    </div>
-
-    <div class="entry">
+        <p class="achievement-links"><a href="assets/plantpayoff_bm26_poster.pdf" target="_blank" rel="noopener">Poster PDF ↗</a> · <a href="https://github.com/LodySun/Pilot_plant_payoff" target="_blank" rel="noopener">GitHub repo ↗</a></p>
+      </div>
+    </details>
+    <details class="entry research-disclosure">
+      <summary><span class="achievement-heading"><span class="meta">Poster · MSc thesis · GitHub repo</span><h3>Staged rule acquisition in WishGLD</h3></span></summary>
+      <div class="disclosure-body">
       <div class="meta">MSc thesis, University of Helsinki, supervised by Benjamin U. Cowley</div>
-      <h3>Staged rule acquisition in WishGLD</h3>
       <p>
         Modeling rule learning as a temporally extended, multi-marker transition
         rather than a single event. A two-state hidden Markov model estimates
@@ -55,53 +93,44 @@
         response and a logical-collapse marker, and related to feedback-locked
         EEG (FRN, P3b) and inter-subject representational similarity (IS-RSA).
       </p>
-    </div>
-
-    <div class="entry">
+        <p class="achievement-links"><a href="assets/wishgld_mcc26_poster.pdf" target="_blank" rel="noopener">Poster PDF ↗</a> · <a href="https://hdl.handle.net/10138/637853" target="_blank" rel="noopener">MSc thesis ↗</a> · <a href="https://github.com/LodySun/Reknow_Thesis" target="_blank" rel="noopener">GitHub repo ↗</a></p>
+      </div>
+    </details>
+    <details class="entry research-disclosure">
+      <summary><span class="achievement-heading"><span class="meta">GitHub repo</span><h3>Four-Rule WCST</h3></span></summary>
+      <div class="disclosure-body">
       <div class="meta">Task development</div>
-      <h3>Four-Rule WCST</h3>
       <p>
         Designing and implementing a four-rule WCST in PsyToolkit (adding an
         orthogonal orientation rule to the classic dimensions) to support future
         reinforcement-learning modeling of multidimensional strategy use.
       </p>
-    </div>
-
-    <div class="entry">
+        <p class="achievement-links"><a href="https://github.com/LodySun/Practical-Training" target="_blank" rel="noopener">GitHub repo ↗</a></p>
+      </div>
+    </details>
+    <details class="entry research-disclosure">
+      <summary><span class="achievement-heading"><span class="meta">Research pipeline</span><h3>Cross-species attentional set-shifting</h3></span></summary>
+      <div class="disclosure-body">
       <div class="meta">Research assistant, HiPerCog Group, University of Helsinki</div>
-      <h3>Cross-species attentional set-shifting</h3>
       <p>
         Building the human-side analysis pipeline for a rat–human Go/NoGo
         attentional set-shifting paradigm: preprocessing from raw behavioral
         output through a model-fitting pipeline matched to the existing rodent
         pipeline, so that both species can be fitted under a single model.
       </p>
-    </div>
-
-    <div class="entry">
+      </div>
+    </details>
+    <details class="entry research-disclosure">
+      <summary><span class="achievement-heading"><span class="meta">BSc thesis</span><h3>Locus coeruleus integrity and set-shifting in Parkinson's disease</h3></span></summary>
+      <div class="disclosure-body">
       <div class="meta">BSc thesis, CAS Institute of Neuroscience, supervised by Zheng Ye</div>
-      <h3>Locus coeruleus integrity and set-shifting in Parkinson's disease</h3>
       <p>
         Quantified locus coeruleus / substantia nigra integrity from
         neuromelanin-MRI and linked these structural metrics to set-shifting
         deficits (CANTAB IED) in Parkinson's disease.
       </p>
-    </div>
-
-  </section>
-
-  <section class="page" id="future-directions" aria-labelledby="future-directions-title" style="padding-top:0">
-    <h2 id="future-directions-title">Future directions</h2>
-
-    <div class="entry">
-      <h3>Narrative &amp; event memory</h3>
-      <p>
-        Toward mapping the microstructure of narrative and non-linear storytelling
-        onto predictive neural dynamics: event segmentation, prediction error,
-        and individual differences in how people build coherent event structure
-        from continuous experience.
-      </p>
-    </div>
+      </div>
+    </details>
   </section>
 </main>
 
