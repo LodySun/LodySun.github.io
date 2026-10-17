@@ -48,7 +48,7 @@ nav {
   padding: 1rem 1.5rem; gap: 1rem;
 }
 .brand {
-  font-family: "Fraunces", serif; font-weight: 600; font-size: 1.05rem;
+  font-family: "Patrick Hand", cursive; font-weight: 400; font-size: 1.45rem;
   color: var(--ink); letter-spacing: .2px; white-space: nowrap;
 }
 .brand:hover { color: var(--accent); }
@@ -191,19 +191,22 @@ footer {
 /* ---------- research disclosures ---------- */
 .achievements { padding-top: 0; }
 .research-disclosure > summary {
-  display: flex; align-items: baseline; gap: .7rem;
+  display: block;
   cursor: pointer; list-style: none; padding: .35rem 0;
 }
 .research-disclosure > summary::-webkit-details-marker { display: none; }
-.research-disclosure > summary::before {
-  content: "›"; flex: 0 0 auto; color: var(--accent); font-size: 1.2rem;
+.research-disclosure > summary h3 { display: flex; align-items: baseline; gap: .5rem; }
+.research-disclosure > summary h3::before {
+  content: "›"; display: inline-block; flex: 0 0 auto; color: var(--accent); font-size: 1.2rem;
   transition: transform .15s ease;
 }
-.research-disclosure[open] > summary::before { transform: rotate(90deg); }
+.research-disclosure[open] > summary h3::before { transform: rotate(90deg); }
 .research-disclosure > summary:hover h3 { color: var(--accent); }
 .research-disclosure > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 .achievement-heading { min-width: 0; }
-.achievement-heading .meta { display: block; }
+.achievement-heading .meta { display: block; padding-left: 1.05rem; }
 .research-disclosure .disclosure-body { padding: .5rem 0 .25rem; }
 .research-disclosure .disclosure-body p + p { margin-top: 1rem; }
 .research-disclosure .achievement-links { font-size: .85rem; }
+
+.hero h1 { font-family: "Patrick Hand", cursive; font-weight: 400; }
